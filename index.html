@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AmbrosiaNails, prothésiste ongulaire à Rambouillet. Gainage, pose gel, semi-permanent, pose américaine, nail art et extensions chablon sur rendez-vous.">
+  <meta name="theme-color" content="#f5f1ed">
+  <title>AmbrosiaNails | Prothésiste ongulaire à Rambouillet</title>
+  <style>
+    :root{--ink:#292725;--muted:#77716c;--paper:#fbfaf8;--sand:#eee7e1;--rose:#c7a99d;--line:#e7dfd8;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;background:rgba(251,250,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:Georgia,serif;font-size:1.35rem;letter-spacing:.13em;text-decoration:none}
+    nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;font-size:.9rem;color:#514b47}
+    .hero{padding:90px 0 76px;background:linear-gradient(115deg,#f3eee9,#fbfaf8 62%,#eee5df)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:.74rem;color:#8c7167;font-weight:bold}
+    h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.15}
+    h1{font-size:clamp(2.7rem,6vw,5rem);margin:18px 0}
+    h2{font-size:clamp(2rem,4vw,3rem);margin:0 0 18px}
+    .lead{font-size:1.13rem;color:#625c57;max-width:560px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:13px 21px;border-radius:3px;text-decoration:none;font-weight:bold;font-size:.9rem}
+    .primary{background:#403b37;color:#fff}.secondary{border:1px solid #9f8b80;color:#403b37}
+    .hero-art{min-height:430px;border-radius:48% 48% 4px 4px;background:linear-gradient(145deg,#ded0c6,#f4eee9 55%,#cbb5aa);display:flex;align-items:center;justify-content:center;padding:28px;position:relative;overflow:hidden}
+    .hero-art:before{content:"";position:absolute;width:68%;height:80%;border:1px solid rgba(255,255,255,.75);border-radius:48% 48% 4px 4px}
+    .hero-art span{font-family:Georgia,serif;font-size:clamp(1.7rem,4vw,3rem);letter-spacing:.14em;color:#5d4d45;text-align:center;z-index:1}
+    section{padding:82px 0}.center{text-align:center}.intro{max-width:700px;margin:0 auto 38px;color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{background:#fff;border:1px solid var(--line);padding:26px;min-height:150px}
+    .service .num{font-family:Georgia,serif;color:#b08f82;font-size:1.5rem}
+    .service h3{font-size:1.35rem;margin:10px 0}
+    .service p{color:var(--muted);font-size:.92rem;margin:0}
+    .soft{background:#f1ebe6}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+    .monogram{min-height:300px;background:linear-gradient(145deg,#e4d8cf,#cbb7ab);display:grid;place-items:center}
+    .monogram span{font-family:Georgia,serif;font-size:5rem;letter-spacing:.12em;color:#fff}
+    .price-box{max-width:760px;margin:auto;background:#fff;border:1px solid var(--line);padding:30px;text-align:center}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .gallery div{min-height:230px;background:linear-gradient(145deg,#e8ddd5,#d0bcb0);display:grid;place-items:center;color:#69584f;font-family:Georgia,serif;font-size:1.2rem;text-align:center;padding:15px}
+    .contact{background:#3f3935;color:#fff}.contact .intro{color:#e0d8d2}
+    .contact-card{max-width:720px;margin:auto;text-align:center}
+    .contact a{color:#fff}.contact .btn{margin:7px}
+    footer{padding:25px 0;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:760px){.nav{align-items:flex-start;padding:17px 0;flex-direction:column}nav{gap:13px;flex-wrap:wrap}nav a{font-size:.82rem}.hero{padding:60px 0}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-art{min-height:280px}.services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}section{padding:60px 0}}
+    @media(max-width:480px){.services,.gallery{grid-template-columns:1fr}.service{min-height:0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#accueil">AMBROSIA NAILS</a>
+    <nav aria-label="Navigation principale">
+      <a href="#prestations">Prestations</a><a href="#univers">À propos</a><a href="#tarifs">Tarifs</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Prothésiste ongulaire · Rambouillet</div>
+        <h1>La beauté du détail.<br>L’élégance au bout des doigts.</h1>
+        <p class="lead">Bienvenue chez AmbrosiaNails. Je vous accueille à mon domicile, à Rambouillet, pour un moment dédié à la beauté de vos mains et à vos envies.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/33614575824?text=Bonjour%20AmbrosiaNails%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener">Prendre rendez-vous</a>
+          <a class="btn secondary" href="#prestations">Découvrir les prestations</a>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Univers élégant et épuré AmbrosiaNails"><span>AMBROSIA<br>NAILS</span></div>
+    </div>
+  </section>
+
+  <section id="prestations">
+    <div class="wrap">
+      <div class="center">
+        <div class="eyebrow">Sublimez vos mains</div>
+        <h2>Les prestations</h2>
+        <p class="intro">Une prestation adaptée à vos envies et au résultat souhaité. Échangeons ensemble pour choisir la technique qui vous correspond.</p>
+      </div>
+      <div class="services">
+        <article class="service"><div class="num">01</div><h3>Gainage</h3><p>Pour renforcer et mettre en valeur vos ongles naturels.</p></article>
+        <article class="service"><div class="num">02</div><h3>Pose gel</h3><p>Pour une mise en forme soignée et une tenue adaptée à votre quotidien.</p></article>
+        <article class="service"><div class="num">03</div><h3>Semi-permanent</h3><p>Une finition brillante et une couleur élégante.</p></article>
+        <article class="service"><div class="num">04</div><h3>Pose américaine</h3><p>Une technique d’extension pour une longueur et une forme personnalisées.</p></article>
+        <article class="service"><div class="num">05</div><h3>Nail art</h3><p>Des détails créatifs pour personnaliser votre manucure.</p></article>
+        <article class="service"><div class="num">06</div><h3>Extensions chablon</h3><p>Une extension sculptée selon la forme et la longueur souhaitées.</p></article>
+        <article class="service"><div class="num">07</div><h3>Dépose</h3><p>Un retrait réalisé avec soin, selon la pose à retirer.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="univers">
+    <div class="wrap about-grid">
+      <div class="monogram" aria-label="Monogramme AmbrosiaNails"><span>AN</span></div>
+      <div>
+        <div class="eyebrow">L’univers AmbrosiaNails</div>
+        <h2>Un moment pour vous.</h2>
+        <p>AmbrosiaNails est une activité indépendante dédiée à la mise en beauté des ongles. Chaque rendez-vous est l’occasion de prendre le temps d’échanger sur vos envies et de porter une attention particulière aux finitions.</p>
+        <p>Je vous reçois à mon domicile à Rambouillet, sur rendez-vous uniquement, dans un espace dédié à votre prestation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tarifs">
+    <div class="wrap">
+      <div class="center">
+        <div class="eyebrow">Une prestation adaptée à vos envies</div>
+        <h2>Tarifs & rendez-vous</h2>
+        <p class="intro">Pour connaître le tarif correspondant à la prestation souhaitée, contactez-moi directement. La grille tarifaire détaillée pourra être ajoutée ici.</p>
+      </div>
+      <div class="price-box">
+        <h3>Votre prochain rendez-vous commence ici</h3>
+        <p>Précisez la prestation souhaitée et, si possible, joignez une photo d’inspiration à votre message WhatsApp.</p>
+        <a class="btn primary" href="https://wa.me/33614575824?text=Bonjour%20AmbrosiaNails%2C%20pourriez-vous%20me%20communiquer%20vos%20tarifs%20et%20disponibilit%C3%A9s%20%3F" target="_blank" rel="noopener">Demander les tarifs sur WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="galerie">
+    <div class="wrap">
+      <div class="center">
+        <div class="eyebrow">Vos inspirations</div>
+        <h2>Galerie</h2>
+        <p class="intro">Retrouvez les réalisations et nouveautés sur Instagram. Remplacez ces emplacements par vos propres photos avant publication pour présenter fidèlement votre travail.</p>
+      </div>
+      <div class="gallery">
+        <div>Votre réalisation n°1</div><div>Votre réalisation n°2</div><div>Votre réalisation n°3</div>
+      </div>
+      <p class="center"><a href="https://www.instagram.com/ambrosianails78/" target="_blank" rel="noopener">Voir Instagram @ambrosianails78 ↗</a></p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-card">
+      <div class="eyebrow" style="color:#d7bdb1">Contact & réservation</div>
+      <h2>On prend rendez-vous ?</h2>
+      <p class="intro">AmbrosiaNails vous reçoit à domicile à Rambouillet, uniquement sur rendez-vous. L’adresse précise sera communiquée lors de la confirmation du rendez-vous.</p>
+      <a class="btn primary" style="background:#c7a99d;color:#292725" href="https://wa.me/33614575824?text=Bonjour%20AmbrosiaNails%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener">Réserver sur WhatsApp</a>
+      <a class="btn secondary" href="tel:+33614575824">Appeler le 06 14 57 58 24</a>
+      <p><a href="https://www.instagram.com/ambrosianails78/" target="_blank" rel="noopener">@ambrosianails78 sur Instagram</a></p>
+      <p>Rambouillet (78) · Sur rendez-vous uniquement</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> AmbrosiaNails · Tous droits réservés · Rambouillet</div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
